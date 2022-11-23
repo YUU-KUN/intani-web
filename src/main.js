@@ -11,22 +11,9 @@ import CTAButtonSecondary from '@/components/CTAButtonSecondary.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-axios.defaults.baseURL =  process.env.NODE_ENV === 'production' ? 'https://api.intaniofficial.com/api/' : 'http://localhost:8000/api/'
+axios.defaults.baseURL =  process.env.NODE_ENV == 'production' ? 'https://api.intaniofficial.com/api/' : 'http://localhost:8000/api/'
 axios.defaults.headers.common['Authorization'] = localStorage.getItem('Authorization')
 
-// if (localStorage.getItem('Authorization')) {
-//     axios.interceptors.response.use(undefined, function (error) {
-//         if (error) {
-//             const originalRequest = error.config;
-//             if (error.response.status === 401 && !originalRequest._retry) {
-//                 originalRequest._retry = true;
-//                 console.log('token expired');
-//                 store.dispatch('logout')
-//                 router.push('/login')
-//             }
-//         }
-//     })
-// }
 
 const app = createApp(App)
 
