@@ -1,3 +1,5 @@
-export const pwa = {
-    name: "Intani",
+module.exports = {
+    pwa: {
+        name: "Intani",
+    }
 };
