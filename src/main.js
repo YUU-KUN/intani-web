@@ -11,7 +11,7 @@ import CTAButtonSecondary from '@/components/CTAButtonSecondary.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-axios.defaults.baseURL = 'http://localhost:8000/api'
+axios.defaults.baseURL =  process.env.NODE_ENV === 'production' ? 'https://api.intaniofficial.com/api/' : 'http://localhost:8000/api/'
 axios.defaults.headers.common['Authorization'] = localStorage.getItem('Authorization')
 
 // if (localStorage.getItem('Authorization')) {
