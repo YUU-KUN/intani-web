@@ -5,6 +5,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: ['group-hover'],
       fontFamily: {
         'body': ['"Montserrat"',],
       },

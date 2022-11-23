@@ -36,13 +36,7 @@
                 <input class="w-full border-2 border-strong-gray rounded-md py-2 px-3" :type="password_type" id="password"
                     placeholder="Pastikan password anda aman" v-model="password" required />
                 <i class="fa-solid" :class="eye_class" id="eye" @click="toggleShowPassword"></i>
-                <!-- <i class="fa-solid fa-eye-slash"></i> -->
             </div>
-
-            <!-- <div class="password-container">
-                <input type="password" placeholder="Password..." id="password">
-                <i class="fa-solid fa-eye" id="eye"></i>
-            </div> -->
 
             <!-- NIK -->
             <div class="text-left mb-5 ">
@@ -79,7 +73,7 @@
             <!-- CHOOSE BANK -->
             <div v-if="role == 'farmer'" class="text-left mb-5 ">
                 <div class="mb-2 ">
-                    <label for="name">Nama Bank <span class="text-text-red-500 ">*</span></label>
+                    <label for="name">Nama Bank <span class="text-red-500 ">*</span></label>
                 </div>
                 <select id="farm-group" class="w-full border-2 border-strong-gray rounded-md py-2 px-3"
                     v-model="bank_id">
@@ -91,7 +85,7 @@
             <!-- BANK ACCOUNT NUMBER -->
             <div class="text-left mb-5 ">
                 <div class="mb-2 ">
-                    <label for="name">Nomor Rekening <span class="text-text-red-500 ">*</span></label>
+                    <label for="name">Nomor Rekening <span class="text-red-500 ">*</span></label>
                 </div>
                 <input class="w-full border-2 border-strong-gray rounded-md py-2 px-3" type="number" id="name"
                     placeholder="Pastikan nomor rekening benar ya~" v-model="account_number" required />
@@ -100,7 +94,7 @@
             <!-- BANK USER NAME -->
             <div class="text-left mb-5 ">
                 <div class="mb-2 ">
-                    <label for="name">Nama Pemiliki Rekening <span class="text-text-red-500 ">*</span></label>
+                    <label for="name">Nama Pemiliki Rekening <span class="text-red-500 ">*</span></label>
                 </div>
                 <input class="w-full border-2 border-strong-gray rounded-md py-2 px-3" type="text" id="name"
                     placeholder="Ketik nama pemilik rekening" v-model="account_name" required />
@@ -210,7 +204,6 @@ export default {
 
 <style scoped>
 .password-container {
-    /* width: 400px; */
     position: relative;
 }
 
@@ -226,7 +219,7 @@ export default {
     /* top: 28%; */
     top: 60%;
     /* top: 15%; */
-    right: 8%;
+    right: 5%;
     cursor: pointer;
     color: lightgray;
 }

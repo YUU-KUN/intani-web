@@ -16,14 +16,15 @@
 export default {
     data() {
         return {
-            user: this.$route.params.user
+            // user: this.$route.params.user
         }
     },
     methods: {
         login() {
-            this.$store.dispatch('login', user).then(() => {
-                this.$router.push({name: 'Dashboard'})
-            })
+            this.$router.push({name: 'Masuk'})
+            // this.$store.dispatch('login', this.user).then(() => {
+            //     this.$router.push({name: 'Dashboard'})
+            // })
         }
     },
     mounted() {

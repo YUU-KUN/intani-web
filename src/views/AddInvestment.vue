@@ -5,7 +5,7 @@
             <!-- COMMODITY -->
             <div class="text-left mb-5 ">
                 <div class="mb-2 ">
-                    <label for="commodity">Nama Komoditas <span class="text-text-red-500 ">*</span></label>
+                    <label for="commodity">Nama Komoditas <span class="text-red-500 ">*</span></label>
                 </div>
                 <input class="w-full border-2 border-strong-gray rounded-md py-2 px-3" type="text" id="commodity" placeholder="Ketik Nama Komoditas" v-model="commodity" required/>
             </div>
