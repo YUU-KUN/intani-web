@@ -73,7 +73,6 @@ export default {
             return 1/100 * amount
         },
         paymentTotal() {
-            console.log(this.adminFee(this.amount));
             this.payment_total = +this.amount + +this.adminFee(this.amount)
             return this.payment_total
         },
@@ -84,6 +83,7 @@ export default {
             }
             // this.$router.push({name: 'Investasi Berhasil', params: {data}, props: {data}})
             this.axios.post(`pay_investment`, data).then(response => {
+                console.log(response.data);
                 this.$router.push({name: 'Investasi Berhasil'})
             }).catch(error => {
                 console.log(error.response);

@@ -7,10 +7,11 @@
         <CTAButton @click="$router.push({ name: 'Masuk' })" class="mb-2 ">Masuk</CTAButton>
         <CTAButtonSecondary @click="$router.push('/position')" class="mb-8 ">Belum ada akun? Daftar dulu</CTAButtonSecondary>
         
-        <p class="mb-3">Atau masuk dengan</p>
+        <!-- temporary -->
+        <!-- <p class="mb-3">Atau masuk dengan</p>
         <button class="rounded-full bg-white shadow-lg p-3 ">
             <img :src="require('@/assets/images/icons/google-icon.png')" alt="">
-        </button>
+        </button> -->
 
     </div>
 </template>

@@ -1,8 +1,14 @@
 <template>
   <div class="flex flex-col justify-between items-center">
-    <div v-if="investment.farm_group" class="w-full">
+    <div class="w-full" v-if="investment.farm_group || investment.farmer">
         <img src="@/assets/images/kelompok_tani/kelompok_tani_1.png" alt="" class="mx-auto mb-3">
-        <p class="font-bold text-18 mb-6 ">{{investment.farm_group ? investment.farm_group.name : investment.farmer.name}}</p>
+        <div v-if="investment.farm_group">
+            <!-- <pre>{{investment.farm_group}}</pre> -->
+            <p class="font-bold text-18 mb-6 ">{{investment.farm_group.name}}</p>
+        </div>
+        <div v-else>
+            <p class="font-bold text-18 mb-6 ">{{investment.farm_group ? investment.farm_group.name : investment.farmer.name}}</p>
+        </div>
         <p class="text-14 mb-6">{{investment.address}}</p>
     
         <!-- temporary hidden -->
