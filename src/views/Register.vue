@@ -64,6 +64,7 @@
                 <select id="farm-group" class="w-full border-2 border-strong-gray rounded-md py-2 px-3"
                     v-model="farm_group_id">
                     <option value="" selected disabled>Pilih Kelompok Tani</option>
+                    <option value="">Petani Individu</option>
                     <option v-for="farm_group in farm_groups" :value="farm_group.id" :key="farm_group.id">
                         {{ farm_group.name }}</option>
                 </select>
